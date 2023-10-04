@@ -14,9 +14,13 @@ export default {
       '2xl': '1536px'
     },
     colors: {
+      white: '#FFFFFF',
       gray: '#708090',
       green: '#53EBAB',
       red: '#E30000'
+    },
+    fontFamily: {
+      sans: ['Verdana', 'sans-serif']
     }
   },
   plugins: []
