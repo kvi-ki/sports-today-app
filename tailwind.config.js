@@ -15,12 +15,15 @@ export default {
     },
     colors: {
       white: '#FFFFFF',
-      gray: '#708090',
+      gray: '#334155',
       green: '#53EBAB',
       red: '#E30000'
     },
     fontFamily: {
       sans: ['Verdana', 'sans-serif']
+    },
+    fontSize: {
+      header: '2rem'
     }
   },
   plugins: []
