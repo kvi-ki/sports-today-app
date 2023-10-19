@@ -33,3 +33,11 @@ test(`should mock a match and doesn't call api`, async ({ page }) => {
 
   await expect(page.getByText('Letonia')).toBeVisible();
 });
+
+const baseUrl = 'https://deportes-hoy.herokuapp.com/api';
+
+test('should assert response status', async ({ request }) => {
+  const response = await request.get(`${baseUrl}/matches`);
+
+  expect(response.status()).toBe(200);
+});
