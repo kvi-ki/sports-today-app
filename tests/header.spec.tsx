@@ -1,9 +1,11 @@
-import { test } from '@playwright/test';
+import { expect, test } from '@playwright/test';
 
 test.beforeEach(async ({ page }) => {
   await page.goto('http://localhost:5173/');
 });
 
 test('should render header', async ({ page }) => {
-  await page.setContent('<h1>Deportes Hoy</h1>');
+  const header = page.locator('id=header');
+
+  await expect(header).toContainText('Deportes Hoy');
 });
