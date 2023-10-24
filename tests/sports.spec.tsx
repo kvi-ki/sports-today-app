@@ -2,21 +2,41 @@ import { expect, test } from '@playwright/test';
 
 const apiResponse = {
   day: '2023-10-12',
-  matches: {
-    startAt: '2023-10-12T16:00:00Z',
-    league: '',
-    homeTeam: 'Letonia',
-    homeTeamLogo:
-      'https://sportstves.b-cdn.net/teams/mini_407_201910120844.png',
-    awayTeam: 'Armenia',
-    awayTeamLogo: 'https://sportstves.b-cdn.net/teams/mini_219_20140427.png',
-    channels: [
-      {
-        name: 'UEFA TV',
-        paid: false
-      }
-    ]
-  }
+  matches: [
+    {
+      startAt: '2023-10-12T16:00:00Z',
+      league: '',
+      homeTeam: 'Letonia',
+      homeTeamLogo:
+        'https://sportstves.b-cdn.net/teams/mini_407_201910120844.png',
+      awayTeam: 'Armenia',
+      awayTeamLogo: 'https://sportstves.b-cdn.net/teams/mini_219_20140427.png',
+      channels: [
+        {
+          name: 'UEFA TV',
+          paid: false
+        }
+      ]
+    },
+    {
+      startAt: '2023-10-24T19:00:00Z',
+      league: '',
+      homeTeam: 'Sevilla',
+      homeTeamLogo: 'https://sportstves.b-cdn.net/teams/mini_12_20130125.png',
+      awayTeam: 'Arsenal',
+      awayTeamLogo: 'https://sportstves.b-cdn.net/teams/mini_126_20130210.png',
+      channels: [
+        {
+          name: 'M+ Liga de Campeones 2',
+          paid: true
+        },
+        {
+          name: 'M+ Liga de Campeones 4',
+          paid: true
+        }
+      ]
+    }
+  ]
 };
 
 test.describe.parallel('API testing', () => {
