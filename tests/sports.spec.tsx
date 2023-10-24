@@ -2,10 +2,10 @@ import { expect, test } from '@playwright/test';
 
 const apiResponse = [
   {
-    day: '2023-10-12',
+    day: '2023-10-24',
     matches: [
       {
-        startAt: '2023-10-12T16:00:00Z',
+        startAt: '2023-10-24T16:00:00Z',
         league: '',
         homeTeam: 'Letonia',
         homeTeamLogo:
@@ -21,7 +21,7 @@ const apiResponse = [
         ]
       },
       {
-        startAt: '2023-10-12T19:00:00Z',
+        startAt: '2023-10-24T19:00:00Z',
         league: '',
         homeTeam: 'Sevilla',
         homeTeamLogo: 'https://sportstves.b-cdn.net/teams/mini_12_20130125.png',
