@@ -1,16 +1,7 @@
+import { Date } from '../date/Date';
+import { MatchProps } from '../match/Match';
 import { getMatches } from '../../api/sports';
 import { useQuery } from '@tanstack/react-query';
-
-type Date = {
-  matches: MatchProps[];
-};
-
-type MatchProps = {
-  homeTeam: string;
-  homeTeamLogo: string;
-  awayTeam: string;
-  awayTeamLogo: string;
-};
 
 function Matches() {
   const { isFetching, isError, data, error } = useQuery({

@@ -1,5 +1,12 @@
 import '../../index.css';
 
+export type MatchProps = {
+  homeTeam: string;
+  homeTeamLogo: string;
+  awayTeam: string;
+  awayTeamLogo: string;
+};
+
 function Match() {
   return (
     <div className="m-4 flex flex-col justify-center">
