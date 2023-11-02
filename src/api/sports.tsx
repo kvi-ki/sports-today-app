@@ -5,5 +5,5 @@ export async function getMatches() {
     'https://deportes-hoy.herokuapp.com/api/matches'
   );
 
-  return matches;
+  return matches.data;
 }
