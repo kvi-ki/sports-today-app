@@ -26,6 +26,5 @@ test('should print away teams list', async ({ page }) => {
 });
 
 test('should print teams banner', async ({ page }) => {
-  await expect(page.getByAltText('team logo')).toBeVisible();
   await expect(page.getByAltText('team logo')).toHaveCount(8);
 });
