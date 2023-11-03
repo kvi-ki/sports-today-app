@@ -11,7 +11,7 @@ export type MatchProps = {
 
 function Match(match: MatchProps) {
   return (
-    <li>
+    <li className="m-4 flex justify-between">
       <HomeTeam teamName={match.homeTeam} teamLogo={match.homeTeamLogo} />
       <AwayTeam teamName={match.awayTeam} teamLogo={match.awayTeamLogo} />
     </li>
