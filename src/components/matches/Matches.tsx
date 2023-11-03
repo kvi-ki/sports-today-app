@@ -1,5 +1,5 @@
 import { Date } from '../date/Date';
-import { MatchProps } from '../match/Match';
+import Match, { MatchProps } from '../match/Match';
 import { getMatches } from '../../api/sports';
 import { useQuery } from '@tanstack/react-query';
 
@@ -27,7 +27,7 @@ function Matches() {
     if (Array.isArray(matches)) {
       return (matches as MatchProps[]).map(
         (match: MatchProps, index: number) => {
-          return <li key={index}>{match.homeTeam}</li>;
+          return <Match key={index} {...match} />;
         }
       );
     }

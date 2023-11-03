@@ -1,4 +1,6 @@
 import '../../index.css';
+import AwayTeam from '../team/AwayTeam';
+import HomeTeam from '../team/HomeTeam';
 
 export type MatchProps = {
   homeTeam: string;
@@ -7,17 +9,12 @@ export type MatchProps = {
   awayTeamLogo: string;
 };
 
-function Match() {
+function Match(match: MatchProps) {
   return (
-    <div className="m-4 flex flex-col justify-center">
-      <p data-testid="homeTeam" className="text-gray">
-        Portugal - Italia
-      </p>
-      <p className="text-xl text-red font-semibold m-3">18:00</p>
-      <a className="bg-green p-2.5 m-3 w-24 h-11 rounded-md text-white">
-        UEFA TV
-      </a>
-    </div>
+    <li>
+      <HomeTeam teamName={match.homeTeam} teamLogo={match.homeTeamLogo} />
+      <AwayTeam teamName={match.awayTeam} teamLogo={match.awayTeamLogo} />
+    </li>
   );
 }
 
