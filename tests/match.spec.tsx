@@ -24,3 +24,8 @@ test('should print away teams list', async ({ page }) => {
   await expect(page.getByText('Lazio')).toBeVisible();
   await expect(page.getByRole('listitem')).toHaveCount(4);
 });
+
+test('should print teams banner', async ({ page }) => {
+  await expect(page.getByAltText('team logo')).toBeVisible();
+  await expect(page.getByAltText('team logo')).toHaveCount(8);
+});
