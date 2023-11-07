@@ -1,5 +1,3 @@
-import '../../index.css';
-
 type TimeProps = {
   startAt: string;
 };
@@ -9,5 +7,5 @@ export default function Time(time: TimeProps) {
     return time.startAt.slice(11, 16);
   };
 
-  return <div>{timeFormated()}</div>;
+  return <div className="text-red text-center font-bold">{timeFormated()}</div>;
 }
