@@ -6,10 +6,10 @@ export type ChannelsProps = {
 
 export default function Channels(channels: ChannelsProps) {
   const channelsList = () => {
-    return channels.channels.map((channel: ChannelProps) => {
-      return <Channel {...channel} />;
+    return channels.channels.map((channel: ChannelProps, index: number) => {
+      return <Channel key={index} {...channel} />;
     });
   };
 
-  return channelsList();
+  return <ul className="col-span-2 flex justify-evenly">{channelsList()}</ul>;
 }
