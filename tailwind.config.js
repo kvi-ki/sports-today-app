@@ -16,14 +16,17 @@ export default {
     colors: {
       white: '#FFFFFF',
       gray: '#64748b',
-      green: '#53EBAB',
-      red: '#E30000'
+      navy: '#678eb4',
+      red: '#E30000',
+      blue: '#E7EAF6'
     },
     fontFamily: {
       sans: ['Verdana', 'sans-serif']
     },
     fontSize: {
       header: '2rem',
+      team: '1.2rem',
+      time: '1.5rem',
       channel: '0.9rem'
     }
   },
