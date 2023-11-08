@@ -23,7 +23,8 @@ export default {
       sans: ['Verdana', 'sans-serif']
     },
     fontSize: {
-      header: '2rem'
+      header: '2rem',
+      channel: '0.9rem'
     }
   },
   plugins: []
