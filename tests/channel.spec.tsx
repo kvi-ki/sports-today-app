@@ -19,6 +19,6 @@ test('should print channels', async ({ page }) => {
   await expect(page.getByText('M+ Liga de Campeones 3')).toBeVisible();
 });
 
-test('should recognise not paid channel', async ({ page }) => {
-  expect(page.getByText('UEFA TV')).toBeFalsy();
+test('should print not paid channel by green', async ({ page }) => {
+  await expect(page.getByText('UEFA TV')).toHaveClass(/bg-green/);
 });
