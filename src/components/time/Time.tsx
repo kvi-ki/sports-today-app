@@ -8,9 +8,7 @@ export default function Time(time: TimeProps) {
   };
 
   return (
-    <div
-      className="col-span-2 text-red text-center font-bold"
-    >
+    <div className="col-span-2 text-red text-center font-bold text-time">
       {timeFormated()}
     </div>
   );
