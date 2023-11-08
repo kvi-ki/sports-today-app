@@ -25,7 +25,7 @@ export default {
     },
     fontSize: {
       header: '2rem',
-      team: '1.2rem',
+      team: '1.1rem',
       time: '1.5rem',
       channel: '0.9rem'
     }
