@@ -14,6 +14,7 @@ test.beforeEach(async ({ page }) => {
 });
 
 test('should print channels', async ({ page }) => {
-    await expect(page.getByTestId('channel')).toHaveCount(5);
- 
+  await expect(page.getByTestId('channel')).toHaveCount(5);
+  await expect(page.getByText('UEFA TV')).toBeVisible();
+  await expect(page.getByText('M+ Liga de Campeones 3')).toBeVisible();
 });
