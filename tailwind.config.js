@@ -18,7 +18,8 @@ export default {
       gray: '#64748b',
       navy: '#678eb4',
       red: '#E30000',
-      blue: '#E7EAF6'
+      blue: '#E7EAF6',
+      green: '#00BDAA'
     },
     fontFamily: {
       sans: ['Verdana', 'sans-serif']
