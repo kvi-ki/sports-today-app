@@ -7,5 +7,11 @@ export default function Time(time: TimeProps) {
     return time.startAt.slice(11, 16);
   };
 
-  return <div className="text-red text-center font-bold">{timeFormated()}</div>;
+  return (
+    <div
+      className="col-span-2 text-red text-center font-bold"
+    >
+      {timeFormated()}
+    </div>
+  );
 }
