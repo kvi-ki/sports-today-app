@@ -14,5 +14,5 @@ test('should print home teams list', async ({ page }) => {
 
   await expect(page.getByText('Letonia')).toBeVisible();
   await expect(page.getByText('Feyenoord')).toBeVisible();
-  await expect(page.getByRole('listitem')).toHaveCount(4);
+  await expect(page.getByTestId('homeTeam')).toHaveCount(4);
 });
