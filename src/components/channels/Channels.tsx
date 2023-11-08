@@ -1,6 +1,6 @@
-import Channel, { ChannelProps } from "./Channel";
+import Channel, { ChannelProps } from './Channel';
 
-type ChannelsProps = {
+export type ChannelsProps = {
   channels: ChannelProps[];
 };
 

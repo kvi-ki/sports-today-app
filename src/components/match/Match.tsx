@@ -1,9 +1,9 @@
 import '../../index.css';
-import { Channel } from '../channels/Channel';
-import Channels from '../channels/Channels';
+import Time from '../time/Time';
 import AwayTeam from '../team/AwayTeam';
 import HomeTeam from '../team/HomeTeam';
-import Time from '../time/Time';
+import Channels from '../channels/Channels';
+import { ChannelProps } from '../channels/Channel';
 
 export type MatchProps = {
   startAt: string;
@@ -11,7 +11,7 @@ export type MatchProps = {
   homeTeamLogo: string;
   awayTeam: string;
   awayTeamLogo: string;
-  channels: Channel[];
+  channels: ChannelProps[];
 };
 
 function Match(match: MatchProps) {
