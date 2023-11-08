@@ -16,7 +16,7 @@ export type MatchProps = {
 
 function Match(match: MatchProps) {
   return (
-    <li className="m-4 grid grid-rows-3 grid-cols-2 gap-2">
+    <li className="m-3 pb-4 pt-4 rounded-md shadow-md bg-blue grid grid-rows-3 grid-cols-2 gap-2">
       <HomeTeam teamName={match.homeTeam} teamLogo={match.homeTeamLogo} />
       <AwayTeam teamName={match.awayTeam} teamLogo={match.awayTeamLogo} />
       <Time startAt={match.startAt} />
