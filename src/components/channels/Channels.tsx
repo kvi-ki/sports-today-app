@@ -1,13 +1,13 @@
-import { Channel } from "./Channel";
+import Channel, { ChannelProps } from "./Channel";
 
 type ChannelsProps = {
-  channels: Channel[];
+  channels: ChannelProps[];
 };
 
 export default function Channels(channels: ChannelsProps) {
   const channelsList = () => {
-    return channels.channels.map((item: Channel) => {
-      return <div data-testId='channel'>{item.name}</div>;
+    return channels.channels.map((channel: ChannelProps) => {
+      return <Channel {...channel} />;
     });
   };
 
