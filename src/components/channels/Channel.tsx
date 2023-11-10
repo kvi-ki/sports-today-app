@@ -4,16 +4,19 @@ export type ChannelProps = {
 };
 
 export default function Channel(channel: ChannelProps) {
-  const classChoose = () => {
+  const setChannelStyle = () => {
+    const baseStyle =
+      'rounded-lg text-center text-white text-channel w-28 p-1 rounded';
+
     if (channel.paid === false) {
-      return 'className=rounded-lg text-center text-white text-channel w-28 p-1 rounded bg-green';
+      return `className=${baseStyle} + bg-green`;
     } else {
-      return 'className=rounded-lg text-center text-white text-channel w-28 p-1 rounded bg-navy';
+      return `className=${baseStyle} + bg-navy`;
     }
   };
 
   return (
-    <li data-testid="channel" className={classChoose()}>
+    <li data-testid="channel" className={setChannelStyle()}>
       {channel.name}
     </li>
   );
