@@ -24,24 +24,24 @@ export default function Matches() {
     })
     .flat();
 
-  const matchesList = () => {
+  const showMatchesData = () => {
     if (Array.isArray(matchesData)) {
       return (matchesData as Data[]).map((matchesData: Data, index: number) => {
         return (
           <li key={index}>
             <Date day={matchesData.day} />
-            <ul>{matches(matchesData.matches)}</ul>
+            <ul>{getMatchesList(matchesData.matches)}</ul>
           </li>
         );
       });
     }
   };
 
-  const matches = (matches: MatchProps[]) => {
+  const getMatchesList = (matches: MatchProps[]) => {
     return matches.map((match: MatchProps, index: number) => {
       return <Match key={index} {...match} />;
     });
   };
 
-  return <ul>{matchesList()}</ul>;
+  return <ul>{showMatchesData()}</ul>;
 }
