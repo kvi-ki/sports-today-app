@@ -19,7 +19,9 @@ export default {
       navy: '#678eb4',
       red: '#E30000',
       blue: '#E7EAF6',
-      green: '#00BDAA'
+      green: '#00BDAA',
+      cyan: '#80DEEA',
+      indigo: '#9FA8DA'
     },
     fontFamily: {
       sans: ['Verdana', 'sans-serif']
