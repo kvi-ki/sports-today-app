@@ -30,15 +30,17 @@ export default function Matches() {
         return (
           <li key={index}>
             <Date day={matchesData.day} />
-            <ul>
-              {matchesData.matches.map((match: MatchProps, index: number) => {
-                return <Match key={index} {...match} />;
-              })}
-            </ul>
+            <ul>{matches(matchesData.matches)}</ul>
           </li>
         );
       });
     }
+  };
+
+  const matches = (matches: MatchProps[]) => {
+    return matches.map((match: MatchProps, index: number) => {
+      return <Match key={index} {...match} />;
+    });
   };
 
   return <ul>{matchesList()}</ul>;
