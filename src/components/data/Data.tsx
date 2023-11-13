@@ -1,5 +1,6 @@
 import { MatchProps } from '../match/Match';
 
-export type Date = {
+export type Data = {
+  day: string;
   matches: MatchProps[];
 };

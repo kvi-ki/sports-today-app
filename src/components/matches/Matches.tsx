@@ -1,4 +1,4 @@
-import { Date } from '../date/Date';
+import { Data } from '../data/Data';
 import Match, { MatchProps } from '../match/Match';
 import { getMatches } from '../../api/sports';
 import { useQuery } from '@tanstack/react-query';
@@ -17,19 +17,26 @@ function Matches() {
     return <span>Error: {error.message}</span>;
   }
 
-  const matches: MatchProps[] = data
-    .map((day: Date) => {
-      return day.matches;
+  const matchesData: Data[] = data
+    .map((data: Data) => {
+      return data;
     })
     .flat();
 
   const matchesList = () => {
-    if (Array.isArray(matches)) {
-      return (matches as MatchProps[]).map(
-        (match: MatchProps, index: number) => {
-          return <Match key={index} {...match} />;
-        }
-      );
+    if (Array.isArray(matchesData)) {
+      return (matchesData as Data[]).map((matchesData: Data, index: number) => {
+        return (
+          <li key={index}>
+            <p data-testid="day">{matchesData.day}</p>
+            <ul>
+              {matchesData.matches.map((match: MatchProps, index: number) => {
+                return <Match key={index} {...match} />;
+              })}
+            </ul>
+          </li>
+        );
+      });
     }
   };
 
