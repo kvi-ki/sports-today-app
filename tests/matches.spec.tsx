@@ -22,5 +22,5 @@ test('should print home teams list', async ({ page }) => {
 test('should print date of matches', async ({ page }) => {
   await expect(page.getByText('2023-10-24')).toBeVisible();
   await expect(page.getByText('2023-10-25')).toBeVisible();
-  await expect(page.getByTestId('day')).toHaveCount(2);
+  await expect(page.getByTestId('date')).toHaveCount(2);
 });
