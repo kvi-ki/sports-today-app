@@ -14,7 +14,7 @@ export type MatchProps = {
   channels: ChannelProps[];
 };
 
-function Match(match: MatchProps) {
+export default function Match(match: MatchProps) {
   return (
     <li className="m-3 pb-4 pt-4 rounded-md shadow-md bg-blue grid grid-flow-row auto-rows-fr gap-2">
       <HomeTeam teamName={match.homeTeam} teamLogo={match.homeTeamLogo} />
@@ -24,5 +24,3 @@ function Match(match: MatchProps) {
     </li>
   );
 }
-
-export default Match;

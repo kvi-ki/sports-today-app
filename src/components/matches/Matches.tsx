@@ -1,5 +1,5 @@
-import { Data } from '../data/Data';
 import Date from '../date/Date';
+import { Data } from '../data/Data';
 import { getMatches } from '../../api/sports';
 import { useQuery } from '@tanstack/react-query';
 import Match, { MatchProps } from '../match/Match';

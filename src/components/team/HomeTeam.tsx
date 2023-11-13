@@ -1,6 +1,6 @@
 import { TeamProps } from './Team';
 
-function HomeTeam(team: TeamProps) {
+export default function HomeTeam(team: TeamProps) {
   return (
     <div data-testId="homeTeam" className="flex justify-around">
       <img src={team.teamLogo} alt="team logo" />
@@ -10,5 +10,3 @@ function HomeTeam(team: TeamProps) {
     </div>
   );
 }
-
-export default HomeTeam;

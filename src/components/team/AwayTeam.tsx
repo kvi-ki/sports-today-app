@@ -1,6 +1,6 @@
 import { TeamProps } from './Team';
 
-function AwayTeam(team: TeamProps) {
+export default function AwayTeam(team: TeamProps) {
   return (
     <div data-testId="awayTeam" className="flex justify-around">
       <h2 className="text-gray text-team text-center pt-3.5">
@@ -10,5 +10,3 @@ function AwayTeam(team: TeamProps) {
     </div>
   );
 }
-
-export default AwayTeam;

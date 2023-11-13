@@ -1,4 +1,4 @@
-function Header() {
+export default function Header() {
   return (
     <h1
       id="header"
@@ -8,5 +8,3 @@ function Header() {
     </h1>
   );
 }
-
-export default Header;
