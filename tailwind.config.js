@@ -21,7 +21,8 @@ export default {
       blue: '#E7EAF6',
       green: '#00BDAA',
       cyan: '#80DEEA',
-      indigo: '#9FA8DA'
+      indigo: '#9FA8DA',
+      lime: '#F9FBE7'
     },
     fontFamily: {
       sans: ['Verdana', 'sans-serif']
