@@ -1,4 +1,5 @@
 import { Data } from '../data/Data';
+import Date from '../date/Date';
 import { getMatches } from '../../api/sports';
 import { useQuery } from '@tanstack/react-query';
 import Match, { MatchProps } from '../match/Match';
@@ -28,12 +29,7 @@ export default function Matches() {
       return (matchesData as Data[]).map((matchesData: Data, index: number) => {
         return (
           <li key={index}>
-            <p
-              data-testid="date"
-              className="text-center bg-gray text-white h-12 pt-2.5 text-date"
-            >
-              {matchesData.day}
-            </p>
+            <Date day={matchesData.day} />
             <ul>
               {matchesData.matches.map((match: MatchProps, index: number) => {
                 return <Match key={index} {...match} />;
