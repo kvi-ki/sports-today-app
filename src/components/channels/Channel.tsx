@@ -5,7 +5,7 @@ export type ChannelProps = {
 
 export default function Channel(channel: ChannelProps) {
   const setChannelStyle = () => {
-    const baseStyle = 'rounded-lg text-channel w-26 h-fit p-2 rounded m-1';
+    const baseStyle = 'rounded-lg text-channel p-2 rounded m-1';
 
     if (channel.paid === false) {
       return `className=${baseStyle} + text-navy bg-orange`;
