@@ -28,7 +28,7 @@ export default function Matches() {
     if (Array.isArray(matchesData)) {
       return (matchesData as Data[]).map((matchesData: Data, index: number) => {
         return (
-          <li key={index}>
+          <li key={index} className="flex flex-col items-center">
             <Date day={matchesData.day} />
             <ul>{getMatchesList(matchesData.matches)}</ul>
           </li>

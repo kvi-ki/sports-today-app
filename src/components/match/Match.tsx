@@ -16,11 +16,17 @@ export type MatchProps = {
 
 export default function Match(match: MatchProps) {
   return (
-    <li className="m-3 pb-4 pt-4 rounded-md shadow-md bg-lime grid grid-flow-row auto-rows-fr gap-2">
-      <HomeTeam teamName={match.homeTeam} teamLogo={match.homeTeamLogo} />
-      <AwayTeam teamName={match.awayTeam} teamLogo={match.awayTeamLogo} />
+    <li className="m-3.5 pb-2 pl-2 pr-2 w-80 rounded-md shadow-2xl bg-orange grid grid-flow-row grid-cols-3 auto-rows-min gap-1 place-items-center">
       <Time startAt={match.startAt} />
+      <HomeTeam teamName={match.homeTeam} teamLogo={match.homeTeamLogo} />
+      <img
+        src="./src/assets/dash.png"
+        className="col-span-1 pt-4.5 w-4/12 opacity-60"
+      />
+      <AwayTeam teamName={match.awayTeam} teamLogo={match.awayTeamLogo} />
       <Channels channels={match.channels} />
     </li>
   );
 }
+
+// 191,103,77,75
