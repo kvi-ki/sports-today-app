@@ -6,7 +6,7 @@ import Matches from './components/matches/Matches';
 
 export default function App() {
   return (
-    <main className="bg-gradient-to-r from-cyan to-indigo">
+    <main className="bg-beige">
       <Header />
       <Matches />
     </main>
