@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
       boxShadow: {
-        '2xl': 'rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;'
+        '2xl': 'rgba(0, 0, 0, 0.35) 0px 5px 15px'
       }
     },
     screens: {
@@ -18,13 +18,11 @@ export default {
       '2xl': '1536px'
     },
     colors: {
-      green: '#1bb38b',
-      orange: '#ff8a66',
-      brown: '#4C1D1D',
-      beige: '#ffeee9',
-      lightgreen: '#26FFC6',
-      lightbrown: '#5e3434'
-
+      orange: '#FF5420',
+      navy: '#031933',
+      gray: '#d9dfe5',
+      green: '#4faa92',
+      lightbrown: '#BF9E93'
     },
     fontFamily: {
       sans: ['Verdana', 'sans-serif']

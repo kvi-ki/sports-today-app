@@ -6,7 +6,7 @@ import Matches from './components/matches/Matches';
 
 export default function App() {
   return (
-    <main className="bg-beige">
+    <main className="bg-gray">
       <Header />
       <Matches />
     </main>
