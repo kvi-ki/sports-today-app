@@ -5,7 +5,11 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}"
   ],
   theme: {
-    extend: {},
+    extend: {
+      boxShadow: {
+        '2xl': 'rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;'
+      }
+    },
     screens: {
       'sm': '640px',
       'md': '768px',
@@ -14,15 +18,13 @@ export default {
       '2xl': '1536px'
     },
     colors: {
-      white: '#FFFFFF',
-      gray: '#64748b',
-      navy: '#678eb4',
-      red: '#E30000',
-      blue: '#E7EAF6',
-      green: '#00BDAA',
-      cyan: '#80DEEA',
-      indigo: '#9FA8DA',
-      lime: '#F9FBE7'
+      green: '#1bb38b',
+      orange: '#ff8a66',
+      brown: '#4C1D1D',
+      beige: '#ffeee9',
+      lightgreen: '#26FFC6',
+      lightbrown: '#5e3434'
+
     },
     fontFamily: {
       sans: ['Verdana', 'sans-serif']
@@ -30,9 +32,9 @@ export default {
     fontSize: {
       header: '2rem',
       date: '1.2rem',
-      team: '1.1rem',
-      time: '1.5rem',
-      channel: '0.9rem'
+      team: '1rem',
+      time: '1.25rem',
+      channel: '0.8rem'
     }
   },
   plugins: []
