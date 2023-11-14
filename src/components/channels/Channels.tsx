@@ -11,5 +11,9 @@ export default function Channels(channels: ChannelsProps) {
     });
   };
 
-  return <ul className="col-span-2 flex justify-evenly">{channelsList()}</ul>;
+  return (
+    <ul className="col-span-3 flex justify-center flex-wrap">
+      {channelsList()}
+    </ul>
+  );
 }
