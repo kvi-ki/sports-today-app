@@ -5,12 +5,13 @@ export type ChannelProps = {
 
 export default function Channel(channel: ChannelProps) {
   const setChannelStyle = () => {
-    const baseStyle = 'rounded-lg text-channel p-2 rounded m-1';
+    const baseStyle =
+      'rounded-lg border-solid border-2 text-channel p-1 rounded mb-2 mr-2';
 
     if (channel.paid === false) {
-      return `className=${baseStyle} + text-navy bg-orange`;
+      return `className=${baseStyle} text-navy border-orange`;
     } else {
-      return `className=${baseStyle} + text-orange bg-navy`;
+      return `className=${baseStyle} text-orange border-navy`;
     }
   };
 

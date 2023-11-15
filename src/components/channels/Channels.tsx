@@ -12,7 +12,7 @@ export default function Channels(channels: ChannelsProps) {
   };
 
   return (
-    <ul className="col-span-3 flex justify-center flex-wrap">
+    <ul className="col-span-3 flex justify-evenly justify-items-center flex-wrap">
       {channelsList()}
     </ul>
   );

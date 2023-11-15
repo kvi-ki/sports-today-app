@@ -21,7 +21,7 @@ export default {
       orange: '#FF5420',
       navy: '#031933',
       gray: '#d9dfe5',
-      green: '#4faa92',
+      //green: '#4faa92',
       lightbrown: '#BF9E93'
     },
     fontFamily: {
@@ -30,9 +30,9 @@ export default {
     fontSize: {
       header: '2rem',
       date: '1.2rem',
-      team: '1rem',
-      time: '1.25rem',
-      channel: '0.8rem'
+      team: '0.8rem',
+      time: '1rem',
+      channel: '0.6rem'
     }
   },
   plugins: []
