@@ -29,7 +29,7 @@ export default {
       sans: ['Verdana', 'sans-serif']
     },
     fontSize: {
-      header: '2rem',
+      header: '1.8rem',
       date: '1.2rem',
       team: '0.8rem',
       time: '1rem',
