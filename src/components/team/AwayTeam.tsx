@@ -3,7 +3,7 @@ import { TeamProps } from './Team';
 export default function AwayTeam(team: TeamProps) {
   return (
     <div
-      data-testId="awayTeam"
+      data-testid="awayTeam"
       className="col-span-1 flex flex-col items-center"
     >
       <img src={team.teamLogo} className="w-7 h-7" alt="team logo" />
