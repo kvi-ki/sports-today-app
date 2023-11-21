@@ -20,10 +20,7 @@ export default {
     colors: {
       orange: '#FF5420',
       navy: '#031933',
-      gray: '#d9dfe5',
-      //green: '#4faa92',
-      lightbrown: '#BF9E93',
-      orangetext: '#e64c1d'
+      gray: '#d9dfe5'
     },
     fontFamily: {
       sans: ['Verdana', 'sans-serif']
