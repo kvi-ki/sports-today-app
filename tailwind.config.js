@@ -8,6 +8,9 @@ export default {
     extend: {
       boxShadow: {
         '2xl': 'rgba(0, 0, 0, 0.35) 0px 5px 15px'
+      },
+      width: {
+        '85': '25rem'
       }
     },
     screens: {
@@ -29,8 +32,11 @@ export default {
       header: '1.8rem',
       date: '1.2rem',
       team: '0.8rem',
+      teamMd: '0.9rem',
       time: '1rem',
-      channel: '0.6rem'
+      timeMd: '1.1rem',
+      channel: '0.6rem',
+      channelMd: '0.7rem'
     }
   },
   plugins: []

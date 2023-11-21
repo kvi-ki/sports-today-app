@@ -30,7 +30,9 @@ export default function Matches() {
         return (
           <li key={index} className="flex flex-col items-center">
             <Date day={matchesData.day} />
-            <ul>{getMatchesList(matchesData.matches)}</ul>
+            <ul className="md:flex flex-wrap justify-center">
+              {getMatchesList(matchesData.matches)}
+            </ul>
           </li>
         );
       });
