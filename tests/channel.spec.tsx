@@ -20,5 +20,5 @@ test('should print channels', async ({ page }) => {
 });
 
 test('should print not paid channel by orange', async ({ page }) => {
-  await expect(page.getByText('UEFA TV')).toHaveClass(/bg-orange/);
+  await expect(page.getByText('UEFA TV')).toHaveClass(/border-orange/);
 });
