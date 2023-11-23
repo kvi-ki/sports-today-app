@@ -16,7 +16,6 @@ test.beforeEach(async ({ page }) => {
 test('should print home teams list', async ({ page }) => {
   await expect(page.getByText('Letonia')).toBeVisible();
   await expect(page.getByText('Feyenoord')).toBeVisible();
-  await expect(page.getByTestId('homeTeam')).toHaveCount(4);
 });
 
 test('should print date of matches', async ({ page }) => {

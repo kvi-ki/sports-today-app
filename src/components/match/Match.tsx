@@ -1,9 +1,8 @@
 import '../../index.css';
 import Time from '../time/Time';
-import AwayTeam from '../team/AwayTeam';
-import HomeTeam from '../team/HomeTeam';
 import Channels from '../channels/Channels';
 import { ChannelProps } from '../channels/Channel';
+import Team from '../team/Team';
 
 export type MatchProps = {
   startAt: string;
@@ -17,9 +16,17 @@ export type MatchProps = {
 export default function Match(match: MatchProps) {
   return (
     <li className="m-3.5 pt-3 w-80 rounded-sm shadow-2xl bg-gray grid grid-flow-row grid-cols-3 auto-rows-min gap-1 place-items-center md:w-85">
-      <HomeTeam teamName={match.homeTeam} teamLogo={match.homeTeamLogo} />
+      <Team
+        teamName={match.homeTeam}
+        teamLogo={match.homeTeamLogo}
+        data-testid="homeTeam"
+      />
       <Time startAt={match.startAt} />
-      <AwayTeam teamName={match.awayTeam} teamLogo={match.awayTeamLogo} />
+      <Team
+        teamName={match.awayTeam}
+        teamLogo={match.awayTeamLogo}
+        data-testid="awayTeam"
+      />
       <Channels channels={match.channels} />
     </li>
   );
