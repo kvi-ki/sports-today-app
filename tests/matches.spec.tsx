@@ -18,8 +18,10 @@ test('should print home teams list', async ({ page }) => {
   await expect(page.getByText('Feyenoord')).toBeVisible();
 });
 
-test('should print date of matches', async ({ page }) => {
-  await expect(page.getByText('2023-10-24')).toBeVisible();
-  await expect(page.getByText('2023-10-25')).toBeVisible();
+test('should print date of matches in a formate of weekday, day and month', async ({
+  page
+}) => {
+  await expect(page.getByText('Martes, 24 de octubre')).toBeVisible();
+  await expect(page.getByText('Miércoles, 25 de octubre')).toBeVisible();
   await expect(page.getByTestId('date')).toHaveCount(2);
 });
