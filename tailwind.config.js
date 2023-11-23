@@ -30,9 +30,12 @@ export default {
     },
     fontSize: {
       header: '1.8rem',
+      headerLg: '2rem',
       date: '1.2rem',
+      dateLg: '1.4rem',
       team: '0.8rem',
       teamMd: '0.9rem',
+      teamLg: '1.1rem',
       time: '1rem',
       timeMd: '1.1rem',
       channel: '0.6rem',
