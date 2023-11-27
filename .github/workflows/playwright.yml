@@ -16,7 +16,7 @@ jobs:
     - name: Install PNPM
       run: npm install -g pnpm
     - name: Install dependencies
-      run: pnpm dev
+      run: pnpm install
     - name: Install Playwright Browsers
       run: pnpm exec playwright install --with-deps
     - name: Run Playwright tests
