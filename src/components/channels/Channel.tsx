@@ -4,7 +4,7 @@ export type ChannelProps = {
 };
 
 export default function Channel(channel: ChannelProps) {
-  const baseStyle =
+  const baseStyle: string =
     'border-solid border rounded text-navy text-channel p-1 mb-2 mr-2 md:text-channelMd';
 
   return (

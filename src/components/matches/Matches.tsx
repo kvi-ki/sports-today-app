@@ -1,28 +1,10 @@
 import Date from '../date/Date';
 import { Data } from '../data/Data';
 import { getMatches } from '../../api/sports';
-import { useQuery } from '@tanstack/react-query';
 import Match, { MatchProps } from '../match/Match';
 
-export default function Matches() {
-  const { isFetching, isError, data, error } = useQuery({
-    queryKey: ['matches'],
-    queryFn: getMatches
-  });
-
-  if (isFetching) {
-    return <span>Loading...</span>;
-  }
-
-  if (isError) {
-    return <span>Error: {error.message}</span>;
-  }
-
-  const matchesData: Data[] = data
-    .map((data: Data) => {
-      return data;
-    })
-    .flat();
+export default async function Matches() {
+  const matchesData: Data[] = await getMatches();
 
   const showMatchesData = () => {
     if (Array.isArray(matchesData)) {
