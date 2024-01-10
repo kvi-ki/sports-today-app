@@ -1,4 +1,3 @@
-import '../../index.css';
 import Time from '../time/Time';
 import Channels from '../channels/Channels';
 import { ChannelProps } from '../channels/Channel';

@@ -1,7 +1,7 @@
 import { test, expect } from '@playwright/test';
 
 test.beforeEach(async ({ page }) => {
-  await page.goto('https://musical-pasca-16c8b2.netlify.app/');
+  await page.goto('/');
 });
 
 test('should have title', async ({ page }) => {
