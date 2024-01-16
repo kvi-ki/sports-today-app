@@ -25,5 +25,8 @@ dist-ssr
 *.tsbuildinfo
 /test-results/
 /playwright/.cache/
+/playwright-report/
 
 /.next/
+.vercel
+.env*.local

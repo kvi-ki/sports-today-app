@@ -1,11 +1,12 @@
 export async function getMatches() {
-  const response: Response = await fetch('https://deportes-hoy.herokuapp.com/api/matches', {
-    next: { revalidate: 60 },
+  const url = process.env.API_URL + '/api/matches';
+  const response: Response = await fetch(url, {
+    next: { revalidate: 3600 }
   });
 
   if (!response.ok) {
-    throw new Error('Failed to fetch data')
-  };
+    throw new Error('Failed to fetch data');
+  }
 
   return response.json();
 }
