@@ -15,12 +15,18 @@ export default function DateMatch(date: DateProps) {
   const firstLetterIsCapital: string = formatedDate.charAt(0).toUpperCase();
   const beautifulDate: string = firstLetterIsCapital + formatedDate.slice(1);
 
+  const dateFormat: string = date.day === today ? 'Hoy' : beautifulDate;
+
+  function markToday(): string {
+    return date.day == today ? 'text-orange' : 'text-navy';
+  }
+
   return (
     <p
       data-testid="date"
-      className="text-center text-navy font-bold pt-2.5 text-date lg:text-dateLg pt-4 pb-2"
+      className={`text-center text-navy font-bold pt-2.5 text-date lg:text-dateLg pt-4 pb-2 ${markToday()}`}
     >
-      {date.day === today ? 'Hoy' : beautifulDate}
+      {dateFormat}
     </p>
   );
 }
