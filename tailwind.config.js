@@ -22,9 +22,12 @@ export default {
       '2xl': '1536px'
     },
     colors: {
-      orange: '#FF5420',
+      orange: '#FC844C',
+      bgOrange: '#FD6C28',
       navy: '#031933',
-      gray: '#d9dfe5'
+      white: '#FFFFFF',
+      gray: '#f0f0f0',
+      brightOrange: '#F7B698'
     },
     fontFamily: {
       sans: ['Verdana', 'sans-serif']
@@ -37,9 +40,9 @@ export default {
       team: '0.8rem',
       teamMd: '0.9rem',
       time: '1rem',
-      timeMd: '1.1rem',
+      timeMd: '0.9rem',
       channel: '0.6rem',
-      channelMd: '0.7rem'
+      channelMd: '0.6rem'
     }
   },
   plugins: []
