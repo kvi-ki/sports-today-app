@@ -1,7 +1,6 @@
 import Time from '../time/Time';
 import Channels from '../channels/Channels';
 import { ChannelProps } from '../channels/Channel';
-import Team from '../team/Team';
 import HomeTeam from '../team/HomeTeam';
 import AwayTeam from '../team/AwayTeam';
 
