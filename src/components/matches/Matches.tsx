@@ -12,7 +12,7 @@ export default async function Matches() {
         return (
           <li key={index} className="flex flex-col items-center">
             <Date day={matchesData.day} />
-            <ul className="md:flex flex-wrap justify-center xl:grid grid-cols-2">
+            <ul className="md:flex flex-wrap justify-center">
               {getMatchesList(matchesData.matches)}
             </ul>
           </li>
