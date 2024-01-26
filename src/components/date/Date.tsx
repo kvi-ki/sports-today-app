@@ -24,7 +24,7 @@ export default function DateMatch(date: DateProps) {
   return (
     <p
       data-testid="date"
-      className={`text-center text-navy font-bold pt-2.5 text-date lg:text-dateLg pt-4 pb-2 ${markToday()}`}
+      className={` col-span-1 row-span-2 text-center text-navy font-bold pt-2.5 text-date lg:text-dateLg pt-4 pb-2 ${markToday()}`}
     >
       {dateFormat}
     </p>
