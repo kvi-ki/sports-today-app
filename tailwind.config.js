@@ -22,15 +22,14 @@ export default {
       '2xl': '1536px'
     },
     colors: {
-      orange: '#FC844C',
-      bgOrange: '#FD6C28',
+      orange: '#fc1533',
       navy: '#031933',
       white: '#FFFFFF',
-      gray: '#f0f0f0',
-      brightOrange: '#F7B698'
+      gray: '#f5f5f5',
+      green: '#03c2a9'
     },
     fontFamily: {
-      sans: ['Verdana', 'sans-serif']
+      sans: ['Poppins', 'sans-serif']
     },
     fontSize: {
       header: '1.8rem',
@@ -41,7 +40,7 @@ export default {
       teamMd: '0.9rem',
       time: '1rem',
       timeMd: '0.9rem',
-      channel: '0.6rem',
+      channel: '0.65rem',
       channelMd: '0.6rem'
     }
   },
