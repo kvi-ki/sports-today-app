@@ -33,15 +33,15 @@ export default {
     },
     fontSize: {
       header: '1.8rem',
-      headerLg: '2rem',
+      headerLg: '1.9rem',
       date: '1.2rem',
-      dateLg: '1.4rem',
+      dateLg: '1.25rem',
       team: '0.8rem',
-      teamMd: '0.9rem',
+      teamLg: '0.85rem',
       time: '1rem',
-      timeMd: '0.9rem',
+      timeLg: '1.05rem',
       channel: '0.65rem',
-      channelMd: '0.6rem'
+      channelLg: '0.7rem'
     }
   },
   plugins: []
