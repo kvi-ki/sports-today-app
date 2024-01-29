@@ -18,13 +18,13 @@ export default function DateMatch(date: DateProps) {
   const dateFormat: string = date.day === today ? 'Hoy' : beautifulDate;
 
   function markToday(): string {
-    return date.day == today ? 'text-orange' : 'text-navy';
+    return date.day == today ? 'text-green' : 'text-navy';
   }
 
   return (
     <p
       data-testid="date"
-      className={` col-span-1 row-span-2 text-center text-navy font-bold pt-2.5 text-date lg:text-dateLg pt-4 pb-2 ${markToday()}`}
+      className={`text-center font-bold pt-2.5 text-date lg:text-dateLg pt-4 pb-2 ${markToday()}`}
     >
       {dateFormat}
     </p>
