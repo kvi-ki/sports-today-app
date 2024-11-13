@@ -1,8 +1,10 @@
 import type { Metadata } from 'next';
-import './index.css'
+import './index.css';
 
 export const metadata: Metadata = {
-  title: 'Deportes Hoy'
+  title: 'Deportes Hoy',
+  description:
+    'Consulta los partidos de fútbol de hoy en televisión. Consulta horarios y canales dónde ver el futbol por la TV'
 };
 
 export default function RootLayout({
@@ -12,7 +14,6 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <meta name="description" content="Consulta los partidos de fútbol de hoy en televisión. Consulta horarios y canales dónde ver el futbol por la TV"></meta>
       <body>
         <div id="root">{children}</div>
       </body>
