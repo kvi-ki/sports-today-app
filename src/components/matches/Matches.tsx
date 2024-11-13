@@ -1,14 +1,26 @@
+
 import Date from '../date/Date';
 import { Data } from '../data/Data';
-import { getMatches } from '../../api/sports';
 import Match, { MatchProps } from '../match/Match';
+import { useEffect, useState } from 'react';
+import { getData } from '@/api/sports';
 
-export default async function Matches() {
-  const matchesData: Data[] = await getMatches();
+export default function Matches() {
+  const [matches, setMatches] = useState();
+
+  useEffect(() => {
+    async function getMatches() {
+      const data = await getData();
+
+      setMatches(data);
+    }
+
+    getMatches();
+  }, []);
 
   const showMatchesData = () => {
-    if (Array.isArray(matchesData)) {
-      return (matchesData as Data[]).map((matchesData: Data, index: number) => {
+    if (Array.isArray(matches)) {
+      return (matches as Data[]).map((matchesData: Data, index: number) => {
         return (
           <li key={index} className="flex flex-col items-center">
             <Date day={matchesData.day} />
