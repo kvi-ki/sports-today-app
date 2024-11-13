@@ -33,4 +33,5 @@ next-env.d.ts
 .env*.local
 .env
 .env.development
+.env.production
 coverage
