@@ -1,6 +1,6 @@
 import { expect, test } from '@playwright/test';
 
-const baseUrl = process.env.API_URL + '/api';
+const baseUrl = process.env.NEXT_PUBLIC_API_URL + '/api';
 
 test('should assert response status', async ({ request }) => {
   const response = await request.get(`${baseUrl}/matches`);
