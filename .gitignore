@@ -25,7 +25,7 @@ dist-ssr
 *.tsbuildinfo
 /test-results/
 /playwright/.cache/
-/playwright-report/
+playwright-report/
 
 /.next/
 next-env.d.ts
