@@ -14,7 +14,11 @@ export default function Time(time: TimeProps) {
     <div className="col-span-1 row-span-2 place-self-center text-orange p-1.5 rounded-md font-bold text-time lg:text-timeLg">
       <Suspense key={hydrated ? 'local' : 'utc'}>
         <time dateTime={time.startAt}>
-          {new Date(time.startAt).toLocaleTimeString().slice(0, 5)}
+          {new Date(time.startAt).toLocaleTimeString([], {
+            hour: '2-digit',
+            minute: '2-digit',
+            hour12: false
+          })}
           {hydrated ? '' : ' (UTC)'}
         </time>
       </Suspense>
