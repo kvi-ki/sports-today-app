@@ -1,5 +1,5 @@
 import { expect, test } from '@playwright/test';
-import responseContent from './response.json' assert { type: 'json' };
+import responseContent from './response.json';
 
 test.beforeEach(async ({ page }) => {
   await page.route('*/**/api/matches', (route) => {
