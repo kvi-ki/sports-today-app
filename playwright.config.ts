@@ -1,4 +1,5 @@
 import { defineConfig, devices } from 'next/experimental/testmode/playwright';
+import 'dotenv/config';
 
 /**
  * Read environment variables from file.
@@ -25,6 +26,7 @@ export default defineConfig({
     storageState: undefined, // Ensures no cached storage across tests
     headless: true
   },
+  testIgnore: ['**/*.test.tsx'],
 
   // webServer: {
   //   command: 'npm run dev',
