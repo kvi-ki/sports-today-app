@@ -1,20 +1,24 @@
-import type {Config} from 'jest';
+import type { Config } from 'jest';
 import nextJest from 'next/jest.js';
 
 const createJestConfig = nextJest({
-  dir: './',
-})
+  dir: './'
+});
 
 const config: Config = {
   preset: 'ts-jest',
-  testEnvironment: "jsdom",
-  coverageProvider: "v8",
+  testEnvironment: 'jsdom',
+  coverageProvider: 'v8',
   clearMocks: true,
   verbose: true,
   collectCoverage: true,
-  collectCoverageFrom: ['**/*.{ts,tsx}', '!**/node_modules/**', '!**/*.d.ts'],
+  //collectCoverageFrom: ['**/*.{ts,tsx}', '!**/node_modules/**', '!**/*.d.ts'],
   setupFilesAfterEnv: ['<rootDir>/jest.setup.ts'],
-  testPathIgnorePatterns: ['<rootDir>/node_modules/', '<rootDir>/playwright-report/', '<rootDir>/tests/e2e/'],
+  testPathIgnorePatterns: [
+    '<rootDir>/node_modules/',
+    '<rootDir>/playwright-report/',
+    '<rootDir>/tests/e2e/'
+  ]
 
   // The directory where Jest should output its coverage files
   // coverageDirectory: undefined,
