@@ -27,12 +27,12 @@ export default defineConfig({
     headless: true
   },
   testIgnore: ['**/*.test.tsx'],
-
-  // webServer: {
-  //   command: 'npm run dev',
-  //   url: 'http://127.0.0.1:3000',
-  //   reuseExistingServer: !process.env.CI
-  // },
+  webServer: {
+    command: 'pnpm dev',
+    port: 3000,
+    reuseExistingServer: true
+    // url: 'http://127.0.0.1:3000',
+  },
 
   /* Configure projects for major browsers */
   projects: [
