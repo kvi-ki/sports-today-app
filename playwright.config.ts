@@ -1,15 +1,13 @@
 import { defineConfig, devices } from 'next/experimental/testmode/playwright';
 import 'dotenv/config';
-
-/**
- * Read environment variables from file.
- * https://github.com/motdotla/dotenv
- */
-// require('dotenv').config();
+import dotenv from 'dotenv';
 
 /**
  * See https://playwright.dev/docs/test-configuration.
  */
+
+dotenv.config();
+
 export default defineConfig({
   testDir: './tests',
   testMatch: ['**/*.spec.tsx'],
