@@ -1,12 +1,9 @@
 import { defineConfig, devices } from 'next/experimental/testmode/playwright';
 import 'dotenv/config';
-import dotenv from 'dotenv';
 
 /**
  * See https://playwright.dev/docs/test-configuration.
  */
-
-dotenv.config();
 
 export default defineConfig({
   testDir: './tests',
